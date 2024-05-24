@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Eric Burmeister</title>
   </head>
-  <body class="light" id="top">
+  <body class="dark" id="top">
     <header class="header center">
       <h3>
         <a href="https://ericburm.github.io" class="link"
@@ -207,6 +207,15 @@
       </div>
     </div>
 
+    <script>
+      const btnTheme = document.getElementById('btn-theme');
+      const body = document.body;
+    
+      btnTheme.addEventListener('click', () => {
+        body.classList.toggle('light');
+      });
+    </script>
+    
     <script src="./script.js"></script>
   </body>
 </html>
