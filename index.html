@@ -37,7 +37,7 @@
         </ul>
 
         <button type="button" aria-label="toggle theme" class="btn btn--icon" id="btn-theme">
-          <i aria-hidden="true" class="fas fa-moon"></i>
+          <i aria-hidden="true" class="fas fa-sun"></i>
         </button>
 
         <button
@@ -208,9 +208,17 @@
     <script>
       const btnTheme = document.getElementById('btn-theme');
       const body = document.body;
+      const icon = btnTheme.querySelector('i');
     
       btnTheme.addEventListener('click', () => {
         body.classList.toggle('light');
+        if (body.classList.contains('light')) {
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+        } else {
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+        }
       });
     </script>
     
