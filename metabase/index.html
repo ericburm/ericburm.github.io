@@ -4,25 +4,12 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                document.getElementById('redirectForm').submit();
-            }, function(err) {
-                console.log('ServiceWorker registration failed: ', err);
-            });
-        } else {
-            // If service workers are not supported, fall back to a simple redirect
+        window.onload = function() {
             window.location.href = "https://loved-snake-broadly.ngrok-free.app/public/dashboard/1ea15746-ffdd-43bd-b914-e34c1362db76";
-        }
+        };
     </script>
 </head>
 <body>
-    <form id="redirectForm" action="https://loved-snake-broadly.ngrok-free.app/public/dashboard/1ea15746-ffdd-43bd-b914-e34c1362db76" method="GET">
-        <noscript>
-            <p>JavaScript is required to redirect to the Metabase dashboard.</p>
-        </noscript>
-    </form>
     <p>Redirecting to the Metabase dashboard...</p>
 </body>
 </html>
