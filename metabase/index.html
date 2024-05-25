@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        window.onload = function() {
+            fetch("https://loved-snake-broadly.ngrok-free.app/public/dashboard/1ea15746-ffdd-43bd-b914-e34c1362db76", {
+                method: 'GET',
+                headers: {
+                    'ngrok-skip-browser-warning': 'true'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = response.url;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        };
+    </script>
+</head>
+<body>
+    <p>Redirecting to the Metabase dashboard...</p>
+</body>
+</html>
