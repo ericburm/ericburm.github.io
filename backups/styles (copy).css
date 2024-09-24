@@ -285,14 +285,8 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 2em;
-}
-
-@media (max-width: 599px) {
-  .projects__grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .project {
@@ -417,4 +411,3 @@ main {
     display: none;
   }
 }
-
