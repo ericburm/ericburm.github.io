@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/fa62c117c7.js"
       crossorigin="anonymous"
@@ -18,38 +22,21 @@
     <title>Eric Burmeister</title>
   </head>
   <body class="dark" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://ericburm.github.io" class="link" target="_blank">EB.</a>
-      </h3>
-
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
     <main>
       <!-- About -->
       <div class="about center">
         <h1>Hi, I'm <span class="about__name">Eric Burmeister.</span></h1>
-        <h2 class="about__role">data operations & automation enthusiast</h2>
-        <p class="about__desc">
-          Seeking opportunities to advance skills in data analytics, data engineering, ETL development, database administration, and process automation. 
-        </p>
+        <h2 class="about__role">data engineer - automation and ML enthusiast</h2>
+                  <p class="about__desc">
+          </p>
 
         <div class="about__contact center">
           <a href="http://resume.burm.io" target="_blank">
             <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a href="mailto:eric@burm.io">
+            <span class="btn btn--outline">Email me</span>
           </a>
 
           <a
@@ -78,96 +65,169 @@
 
         <div class="projects__grid">
           <div class="project">
+            <h3>AI Lifeguard</h3>
+            <div class="project__status project__status-development">STATUS: IN DEVELOPMENT</div>
+            <p class="project__description">
+              When done, we will have a reliable AI-driven pool monitoring system that can trigger alerts/alarms
+              when young children are unattended near our pool. LLM training will include drowning detection, but
+              the focus is preventive, not reactive, measures.
+            </p>
+            <p class="project__description">
+              PROGRESS: Developing the pipeline to take the Home Assistant video feed and split into frames for
+              processing by a Vision LLM like LLaVA for image recognition/analysis.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">DevOps</li>
+              <li class="project__stack-item">Kubernetes</li>
+              <li class="project__stack-item">Linux</li>
+              <li class="project__stack-item">Machine Learning</li>
+            </ul>
+            <ul class="project__stack">
+              <li class="project__stack-item">Model Tuning</li>
+              <li class="project__stack-item">n8n</li>
+              <li class="project__stack-item">Networking</li>
+              <li class="project__stack-item">Python</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>BurmGPT</h3>
+            <div class="project__status project__status-hold">STATUS: ON HOLD</div>
+            <p class="project__description">
+              The vision is to build a private, self-hosted home assistant that replaces both ChatGPT and Google
+              assistant for our queries, schedule management, collaboration, tasks, and home automation needs.
+            </p>
+            <p class="project__description">
+              PROGRESS: LibreChat-powered UI and agents are ready, so after some tweaks to web
+              search results the n8n pipelines are next, but this project is on hold until AI Lifeguard is complete.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">DevOps</li>
+              <li class="project__stack-item">DNS Records</li>
+              <li class="project__stack-item">Kubernetes</li>
+              <li class="project__stack-item">Linux</li>
+            </ul>
+            <ul class="project__stack">
+              <li class="project__stack-item">Machine Learning</li>
+              <li class="project__stack-item">Model Tuning</li>
+              <li class="project__stack-item">n8n</li>
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">SQL</li>
+            </ul>
+
+            <div class="project__icons">
+              <a
+                href="https://ai.burm.io"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project">
             <h3>kWh Dashboard</h3>
+            <div class="project__status project__status-inactive">STATUS: INACTIVE (moved, we no longer have solar)</div>
             <p class="project__description">
               A simple pipeline to extract data from the Evergy API and ebill PDF that allows cost, usage, and solar production monitoring.
             </p>
             <ul class="project__stack">
+              <li class="project__stack-item">API</li>
               <li class="project__stack-item">Python</li>
               <li class="project__stack-item">SQL</li>
-              <li class="project__stack-item">API</li>
             </ul>
 
-            <a
-              href="https://github.com/ericburm/kWh"
-              aria-label="source code"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-
-            <a
-              href="http://kwh.burm.io/"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+            <div class="project__icons">
+              <a
+                href="https://github.com/ericburm/kWh"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+              <a
+                href="http://kwh.burm.io/"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
           </div>
 
           <div class="project">
             <h3>Miles To Go</h3>
+            <div class="project__status project__status-online">STATUS: ONLINE</div>
             <p class="project__description">
               A Tableau story visualizing miles and costs over time between vehicles.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Tableau</li>
-              <li class="project__stack-item">Google Sheets</li>
+              <li class="project__stack-item">Spreadsheets</li>
               <li class="project__stack-item">SQL</li>
+              <li class="project__stack-item">Tableau</li>
             </ul>
 
-            <a
-              href="https://public.tableau.com/app/profile/eric.burmeister/viz/MilesToGo/Story"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+            <div class="project__icons">
+              <a
+                href="https://public.tableau.com/app/profile/eric.burmeister/viz/MilesToGo/Story"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
           </div>
 
           <div class="project">
             <h3>PMR</h3>
+            <div class="project__status project__status-inactive">STATUS: INACTIVE</div>
             <p class="project__description">
               PMR (Preventive Maintenance Report) is a data visualization tool offering clients a metrics-first report following each contract maintenance visit.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Google Sheets</li>
-              <li class="project__stack-item">macros</li>
               <li class="project__stack-item">BlueFolder</li>
+              <li class="project__stack-item">Spreadsheets</li>
+              <li class="project__stack-item">macros</li>
             </ul>
 
-            <a
-              href="https://github.com/ericburm/recent/wiki/PMR-Screenshots"
-              aria-label="source code"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-
+            <div class="project__icons">
+              <a
+                href="https://github.com/ericburm/recent/wiki/PMR-Screenshots"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
           <div class="project">
             <h3>Searcher</h3>
+            <div class="project__status project__status-online">STATUS: ONLINE</div>
             <p class="project__description">
               Searcher makes it easy to find replacement parts, diagrams, manuals, and manufacturer portals.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">bubble.io</li>
-              <li class="project__stack-item">Google Sheets</li>
               <li class="project__stack-item">database</li>
+              <li class="project__stack-item">Spreadsheets</li>
             </ul>
 
-            <a
-              href="https://www.simplefitnessrepair.com/searcher"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+            <div class="project__icons">
+              <a
+                href="https://www.simplefitnessrepair.com/searcher"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -176,43 +236,52 @@
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">SQL</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">Zapier</li>
-          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
-          <li class="skills__list-item btn btn--plain">Metabase</li>
+          <li class="skills__list-item btn btn--plain">API</li>
+          <li class="skills__list-item btn btn--plain">BlueFolder</li>
+          <li class="skills__list-item btn btn--plain">bubble.io</li>
+          <li class="skills__list-item btn btn--plain">data cleaning</li>
+          <li class="skills__list-item btn btn--plain">database</li>
+          <li class="skills__list-item btn btn--plain">DevOps</li>
+          <li class="skills__list-item btn btn--plain">DNS records</li>
+          <li class="skills__list-item btn btn--plain">electronics troubleshooting/repair</li>
+          <li class="skills__list-item btn btn--plain">ETL</li>
           <li class="skills__list-item btn btn--plain">Google Suite</li>
+          <li class="skills__list-item btn btn--plain">Kubernetes</li>
           <li class="skills__list-item btn btn--plain">Linux</li>
+          <li class="skills__list-item btn btn--plain">machine learning</li>
+          <li class="skills__list-item btn btn--plain">macros</li>
+          <li class="skills__list-item btn btn--plain">Metabase</li>
+          <li class="skills__list-item btn btn--plain">model tuning</li>
+          <li class="skills__list-item btn btn--plain">n8n</li>
+          <li class="skills__list-item btn btn--plain">networking</li>
+          <li class="skills__list-item btn btn--plain">Podio</li>
+          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">QBO</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">spreadsheets</li>
+          <li class="skills__list-item btn btn--plain">Tableau</li>
+          <li class="skills__list-item btn btn--plain">various CRMs</li>
           <li class="skills__list-item btn btn--plain">Wordpress</li>
-          <li class="skills__list-item btn btn--plain">DNS Records</li>
-          <li class="skills__list-item btn btn--plain">Various CRMs</li>
-          <li class="skills__list-item btn btn--plain">Zoho & QBO</li>
-          <li class="skills__list-item btn btn--plain">Electronic Troubleshooting/Repair</li>
+          <li class="skills__list-item btn btn--plain">Zapier</li>
+          <li class="skills__list-item btn btn--plain">Zoho Suite</li>
         </ul>
       </section>
 
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:eric@burm.io">
-          <span class="btn btn--outline">Email me</span>
-        </a>
-      </section>
-    </main>
+      <!-- Empty Footer for Spacing -->
+      <footer class="footer">
+        <p></p>
+      </footer>
 
-    <!-- Empty Footer for Spacing -->
-    <footer class="footer">
-      <p></p>
-    </footer>
-
-    <div class="scroll-container">
-      <div class="scroll-top">
-        <a aria-label="Scroll up" href="#top">
-          <i aria-hidden="true" class="fas fa-arrow-up"></i>
-        </a>
+      <div class="scroll-container">
+        <div class="scroll-top">
+          <a aria-label="Scroll up" href="#top">
+            <i aria-hidden="true" class="fas fa-arrow-up"></i>
+          </a>
+        </div>
       </div>
-    </div>
-    
-    <script src="./script.js"></script>
+      
+      <script src="./script.js"></script>
+    </main>
   </body>
 </html>
