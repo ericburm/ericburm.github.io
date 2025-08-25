@@ -74,17 +74,43 @@
 
         <div class="projects__grid">
           <div class="project">
-            <h3>AI Lifeguard</h3>
-            <div class="project__status project__status-development">STATUS: IN DEVELOPMENT</div>
-            <p class="project__description">
-              When done, we will have a reliable AI-driven pool monitoring system that can trigger alerts/alarms
-              when young children are unattended near our pool. LLM training will include drowning detection, but
-              the focus is preventive, not reactive, measures.
-            </p>
-            <p class="project__description">
-              PROGRESS: Developing the pipeline to take the Home Assistant video feed and split into frames for
-              processing by a Vision LLM like LLaVA for image recognition/analysis.
-            </p>
+            <div class="project__content">
+              <h3>Poolboy Q</h3>
+              <div class="project__status project__status-online">STATUS: ONLINE</div>
+              <p class="project__description">
+                Processes pool chemical test reports by parsing PDFs, extracting values, and storing them in a structured format with a vector index. An n8n pipeline connects this data to LibreChat (ai.burm.io), where a RAG workflow makes the results accessible through chat and delivers clear dosage and cleaning recommendations.
+              </p>
+            </div>
+            <ul class="project__stack">
+              <li class="project__stack-item">Docker</li>
+              <li class="project__stack-item">Document Library / Vector Store</li>
+              <li class="project__stack-item">ETL</li>
+              <li class="project__stack-item">Kubernetes</li>
+              <li class="project__stack-item">Machine Learning</li>
+              <li class="project__stack-item">n8n</li>
+              <li class="project__stack-item">Prompting</li>
+              <li class="project__stack-item">RAG</li>
+              <li class="project__stack-item">SQL</li>
+            </ul>
+
+            <div class="project__icons">
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project__content">
+              <h3>AI Lifeguard</h3>
+              <div class="project__status project__status-development">STATUS: IN DEVELOPMENT</div>
+              <p class="project__description">
+                When done, we will have a reliable AI-driven pool monitoring system that can trigger alerts/alarms
+                when young children are unattended near our pool. LLM training will include drowning detection, but
+                the focus is preventive, not reactive, measures.
+              </p>
+              <p class="project__description">
+                PROGRESS: Developing the pipeline to take the Home Assistant video feed and split into frames for
+                processing by a Vision LLM like LLaVA for image recognition/analysis.
+              </p>
+            </div>
             <ul class="project__stack">
               <li class="project__stack-item">DevOps</li>
               <li class="project__stack-item">Kubernetes</li>
@@ -101,16 +127,18 @@
           </div>
 
           <div class="project">
-            <h3>BurmGPT</h3>
-            <div class="project__status project__status-hold">STATUS: ON HOLD</div>
-            <p class="project__description">
-              The vision is to build a private, self-hosted home assistant that replaces both ChatGPT and Google
-              assistant for our queries, schedule management, collaboration, tasks, and home automation needs.
-            </p>
-            <p class="project__description">
-              PROGRESS: LibreChat-powered UI and agents are ready, so after some tweaks to web
-              search results the n8n pipelines are next, but this project is on hold until AI Lifeguard is complete.
-            </p>
+            <div class="project__content">
+              <h3>BurmGPT</h3>
+              <div class="project__status project__status-hold">STATUS: ON HOLD</div>
+              <p class="project__description">
+                The vision is to build a private, self-hosted home assistant that replaces both ChatGPT and Google
+                assistant for our queries, schedule management, collaboration, tasks, and home automation needs.
+              </p>
+              <p class="project__description">
+                PROGRESS: LibreChat-powered UI and agents are ready, so after some tweaks to web
+                search results the n8n pipelines are next, but this project is on hold until AI Lifeguard is complete.
+              </p>
+            </div>
             <ul class="project__stack">
               <li class="project__stack-item">DevOps</li>
               <li class="project__stack-item">DNS Records</li>
@@ -125,26 +153,34 @@
 
             <div class="project__icons">
               <a
-                href="https://github.com/ericburm/kWh"
-                aria-label="source code"
+                href="https://ai.burm.io/"
+                aria-label="live preview"
                 class="link link--icon"
                 target="_blank"
               >
-                <i aria-hidden="true" class="fab fa-github"></i>
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
               </a>
             </div>
           </div>
 
           <div class="project">
-            <h3>kWh Dashboard</h3>
-            <div class="project__status project__status-inactive">STATUS: INACTIVE - SOLD PROPERTY</div>
-            <p class="project__description">
-              A simple pipeline to extract data from the Evergy API and ebill PDF that allows cost, usage, and solar production monitoring.
-            </p>
+            <div class="project__content">
+              <h3>kWh Dashboard</h3>
+              <div class="project__status project__status-inactive">STATUS: INACTIVE - SOLD PROPERTY</div>
+              <p class="project__description">
+                A simple pipeline that used Python to log into the Evergy account when a new billing notification email was received, extract data from the API and eBill PDFs, and consolidate cost, usage, weather, and solar production metrics for monitoring and analysis. The locally hosted dashboard was powered by Metabase.
+              </p>
+            </div>
             <ul class="project__stack">
               <li class="project__stack-item">API</li>
+              <li class="project__stack-item">DNS</li>
+              <li class="project__stack-item">FastAPI</li>
+              <li class="project__stack-item">Github</li>
+              <li class="project__stack-item">Linux</li>
+              <li class="project__stack-item">Metabase</li>
               <li class="project__stack-item">Python</li>
               <li class="project__stack-item">SQL</li>
+              <li class="project__stack-item">web hosting</li>
             </ul>
 
             <div class="project__icons">
@@ -160,11 +196,13 @@
           </div>
 
           <div class="project">
-            <h3>Miles To Go</h3>
-            <div class="project__status project__status-online">STATUS: ONLINE</div>
-            <p class="project__description">
-              A Tableau story visualizing miles and costs over time between vehicles.
-            </p>
+            <div class="project__content">
+              <h3>Miles To Go</h3>
+              <div class="project__status project__status-online">STATUS: ONLINE</div>
+              <p class="project__description">
+                A Tableau story visualizing miles and costs over time between vehicles.
+              </p>
+            </div>
             <ul class="project__stack">
               <li class="project__stack-item">Spreadsheets</li>
               <li class="project__stack-item">SQL</li>
@@ -184,11 +222,13 @@
           </div>
 
           <div class="project">
-            <h3>PMR</h3>
-            <div class="project__status project__status-inactive">STATUS: INACTIVE - SOLD COMPANY</div>
-            <p class="project__description">
-              PMR (Preventive Maintenance Report) is a data visualization tool offering clients a metrics-first report following each contract maintenance visit.
-            </p>
+            <div class="project__content">
+              <h3>PMR</h3>
+              <div class="project__status project__status-inactive">STATUS: INACTIVE - SOLD COMPANY</div>
+              <p class="project__description">
+                PMR (Preventive Maintenance Report) is a data visualization tool offering clients a metrics-first report following each contract maintenance visit.
+              </p>
+            </div>
             <ul class="project__stack">
               <li class="project__stack-item">BlueFolder</li>
               <li class="project__stack-item">Spreadsheets</li>
@@ -207,11 +247,13 @@
             </div>
           </div>
           <div class="project">
-            <h3>Searcher</h3>
-            <div class="project__status project__status-online">STATUS: ONLINE</div>
-            <p class="project__description">
-              Searcher makes it easy to find replacement parts, diagrams, manuals, and manufacturer portals.
-            </p>
+            <div class="project__content">
+              <h3>Searcher</h3>
+              <div class="project__status project__status-online">STATUS: ONLINE</div>
+              <p class="project__description">
+                Searcher makes it easy to find replacement parts, diagrams, manuals, and manufacturer portals.
+              </p>
+            </div>
             <ul class="project__stack">
               <li class="project__stack-item">bubble.io</li>
               <li class="project__stack-item">database</li>
@@ -243,8 +285,12 @@
           <li class="skills__list-item btn btn--plain">database</li>
           <li class="skills__list-item btn btn--plain">DevOps</li>
           <li class="skills__list-item btn btn--plain">DNS records</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">Document Library / Vector Store</li>
           <li class="skills__list-item btn btn--plain">electronics troubleshooting/repair</li>
           <li class="skills__list-item btn btn--plain">ETL</li>
+          <li class="skills__list-item btn btn--plain">FastAPI</li>
+          <li class="skills__list-item btn btn--plain">Github</li>
           <li class="skills__list-item btn btn--plain">Google Suite</li>
           <li class="skills__list-item btn btn--plain">Kubernetes</li>
           <li class="skills__list-item btn btn--plain">Linux</li>
@@ -256,12 +302,15 @@
           <li class="skills__list-item btn btn--plain">networking</li>
           <li class="skills__list-item btn btn--plain">Podio</li>
           <li class="skills__list-item btn btn--plain">PostgreSQL</li>
+          <li class="skills__list-item btn btn--plain">Prompting</li>
           <li class="skills__list-item btn btn--plain">Python</li>
           <li class="skills__list-item btn btn--plain">QBO</li>
+          <li class="skills__list-item btn btn--plain">RAG</li>
           <li class="skills__list-item btn btn--plain">SQL</li>
           <li class="skills__list-item btn btn--plain">spreadsheets</li>
           <li class="skills__list-item btn btn--plain">Tableau</li>
           <li class="skills__list-item btn btn--plain">various CRMs</li>
+          <li class="skills__list-item btn btn--plain">web hosting</li>
           <li class="skills__list-item btn btn--plain">Wordpress</li>
           <li class="skills__list-item btn btn--plain">Zapier</li>
           <li class="skills__list-item btn btn--plain">Zoho Suite</li>
