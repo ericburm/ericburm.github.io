@@ -75,19 +75,53 @@
         <div class="projects__grid">
           <div class="project">
             <div class="project__content">
-              <h3>4Q25 Environment Updates</h3>
-              <div class="project__status project__status-development">STATUS: DEVELOPMENT</div>
+              <h3>Drive.Refuel.Repeat</h3>
+              <div class="project__status project__status-online">STATUS: ONLINE</div>
               <p class="project__description">
-                Redesigning environment to utilize Proxmox, Kubernetes, Tailscale, an MCP (Model Context Protocol) server, and AWS. This hybrid architecture will integrate an on-prem PostgreSQL database with select AWS services, enabling AI experimentation, RAG pipelines, and a centralized automation platform.
+                This is what happens when you pull out your phone to record gas tank refill data for nearly ten years. Ingestion is handled by Make.com from Google Forms entries into Supabase's PostgreSQL instance, which is then connected to Metabase.
+              </p>
+
+              <p class="project__description">
+                Data cleaning and transformations are handled entirely in SQL.
               </p>
             </div>
             <ul class="project__stack">
-              <li class="project__stack-item">AWS</li>
-              <li class="project__stack-item">DevOps</li>
-              <li class="project__stack-item">Kubernetes</li>
+              <li class="project__stack-item">Google Forms</li>
+              <li class="project__stack-item">Make.com</li>
+              <li class="project__stack-item">Metabase</li>
+              <li class="project__stack-item">PostgreSQL</li>
+              <li class="project__stack-item">Supabase</li>
+              <li class="project__stack-item">ETL</li>
+              <li class="project__stack-item">Data Analytics</li>
+              <li class="project__stack-item">DBeaver</li>
+            </ul>
+
+            <div class="project__icons">
+              <a
+                href="https://burm.io/miles"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project__content">
+              <h3>4Q25 Environment Updates</h3>
+              <div class="project__status project__status-development">STATUS: DEVELOPMENT</div>
+              <p class="project__description">
+                All servers have been rebuilt in Proxmox VMs, with remote access handled by Tailscale as needed. Next projects will include rebuilding Poolboy Q (before summer), improving AI Lifeguard after some hardware upgrades, and rebuilding BurmHub and BurmGPT with different tools entirely. For now, this is mostly to allow experimentation with AI (AnythingLLM, Dify, MCP server, Moltbot) and make it easier to kick off new projects.
+              </p>
+            </div>
+            <ul class="project__stack">
+              <li class="project__stack-item">AnythingLLM</li>
+              <li class="project__stack-item">Dify</li>
               <li class="project__stack-item">Linux</li>
               <li class="project__stack-item">MCP server</li>
-              <li class="project__stack-item">PostgreSQL</li>
+              <li class="project__stack-item">Moltbot</li>
               <li class="project__stack-item">Proxmox</li>
               <li class="project__stack-item">System Administration</li>
               <li class="project__stack-item">Tailscale</li>
@@ -361,18 +395,23 @@
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">AnythingLLM</li>
           <li class="skills__list-item btn btn--plain">API</li>
           <li class="skills__list-item btn btn--plain">AWS</li>
+          <li class="skills__list-item btn btn--plain">Azure</li>
           <li class="skills__list-item btn btn--plain">BlueFolder</li>
           <li class="skills__list-item btn btn--plain">bubble.io</li>
           <li class="skills__list-item btn btn--plain">Budibase</li>
           <li class="skills__list-item btn btn--plain">data cleaning</li>
+          <li class="skills__list-item btn btn--plain">Data Analytics</li>
+          <li class="skills__list-item btn btn--plain">Data Factory</li>
           <li class="skills__list-item btn btn--plain">Data Lake</li>
           <li class="skills__list-item btn btn--plain">Data Modeling</li>
           <li class="skills__list-item btn btn--plain">database</li>
           <li class="skills__list-item btn btn--plain">DBeaver</li>
           <li class="skills__list-item btn btn--plain">DevOps</li>
           <li class="skills__list-item btn btn--plain">Dify</li>
+          <li class="skills__list-item btn btn--plain">DNS</li>
           <li class="skills__list-item btn btn--plain">DNS Records</li>
           <li class="skills__list-item btn btn--plain">Docker</li>
           <li class="skills__list-item btn btn--plain">Document Library / Vector Store</li>
@@ -381,26 +420,34 @@
           <li class="skills__list-item btn btn--plain">FastAPI</li>
           <li class="skills__list-item btn btn--plain">Github</li>
           <li class="skills__list-item btn btn--plain">Google Cloud</li>
+          <li class="skills__list-item btn btn--plain">Google Forms</li>
           <li class="skills__list-item btn btn--plain">Google Suite</li>
           <li class="skills__list-item btn btn--plain">Kubernetes</li>
           <li class="skills__list-item btn btn--plain">Librechat</li>
           <li class="skills__list-item btn btn--plain">Linux</li>
           <li class="skills__list-item btn btn--plain">macros</li>
+          <li class="skills__list-item btn btn--plain">Make.com</li>
           <li class="skills__list-item btn btn--plain">MCP server</li>
           <li class="skills__list-item btn btn--plain">Metabase</li>
+          <li class="skills__list-item btn btn--plain">Moltbot</li>
           <li class="skills__list-item btn btn--plain">n8n</li>
           <li class="skills__list-item btn btn--plain">Networking</li>
           <li class="skills__list-item btn btn--plain">Ollama</li>
+          <li class="skills__list-item btn btn--plain">PHP</li>
           <li class="skills__list-item btn btn--plain">Podio</li>
           <li class="skills__list-item btn btn--plain">PostgreSQL</li>
           <li class="skills__list-item btn btn--plain">Prompting</li>
+          <li class="skills__list-item btn btn--plain">PSQL</li>
           <li class="skills__list-item btn btn--plain">Proxmox</li>
           <li class="skills__list-item btn btn--plain">Python</li>
           <li class="skills__list-item btn btn--plain">QBO</li>
           <li class="skills__list-item btn btn--plain">RAG</li>
           <li class="skills__list-item btn btn--plain">Spreadsheets</li>
           <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">SSMS</li>
+          <li class="skills__list-item btn btn--plain">Supabase</li>
           <li class="skills__list-item btn btn--plain">System Administration</li>
+          <li class="skills__list-item btn btn--plain">T-SQL</li>
           <li class="skills__list-item btn btn--plain">Tableau</li>
           <li class="skills__list-item btn btn--plain">Tailscale</li>
           <li class="skills__list-item btn btn--plain">Ubuntu Server</li>
